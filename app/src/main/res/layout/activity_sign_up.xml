@@ -59,6 +59,7 @@
         <Button
             android:id="@+id/signUpButton"
             android:text="@string/signUp"
+            android:textAllCaps="false"
             style="@style/textStyle"
             android:minWidth="150dp"
             android:background="@drawable/button_shape"
@@ -68,6 +69,7 @@
         <Button
             android:id="@+id/signInActivityButton"
             android:text="@string/signIn"
+            android:textAllCaps="false"
             style="@style/textStyle"
             android:minWidth="80dp"
             android:layout_margin="20dp"

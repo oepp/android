@@ -6,6 +6,9 @@
     <string name="signIn">Sign In</string>
     <string name="signUp">Sign Up</string>
     <string name="nameAndSurname">Name And Surname</string>
+    <string name="searchYourCourse">Search Your Course</string>
+    <string name="search">Search</string>
+    <string name="popularCourses">Popular Courses</string>
 
 
 </resources>
