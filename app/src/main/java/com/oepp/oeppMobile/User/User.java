@@ -6,6 +6,12 @@ public class User
     private String nameAndSurname;
     private String password;
 
+    public User(String email,String password)
+    {
+        this.email = email;
+        this.password = password;
+    }
+
     public User(String email, String nameAndSurname, String password) {
         this.email = email;
         this.nameAndSurname = nameAndSurname;
