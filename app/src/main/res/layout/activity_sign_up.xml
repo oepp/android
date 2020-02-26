@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="30dp">
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_marginBottom="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/nameAndSurname_signUpActivity"
+            android:hint="@string/nameAndSurname"
+            android:gravity="center"
+            style="@style/textStyle"
+            android:layout_margin="20dp"
+            android:minWidth="170dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/email_signUpActivity"
+            android:hint="@string/email"
+            android:gravity="center"
+            style="@style/textStyle"
+            android:layout_margin="20dp"
+            android:minWidth="170dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/password_signInActivty"
+            android:hint="@string/password"
+            android:gravity="center"
+            style="@style/textStyle"
+            android:minWidth="170dp"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/passwordRety_signInActivty"
+            android:hint="@string/passwordRety"
+            android:minWidth="170dp"
+            style="@style/textStyle"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:text="@string/signUp"
+            style="@style/textStyle"
+            android:minWidth="150dp"
+            android:background="@drawable/button_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/signInActivityButton"
+            android:text="@string/signIn"
+            style="@style/textStyle"
+            android:minWidth="80dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

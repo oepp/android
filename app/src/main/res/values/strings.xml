@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">OeppMobile</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="passwordRety">Password Rety</string>
+    <string name="signIn">Sign In</string>
+    <string name="signUp">Sign Up</string>
+    <string name="nameAndSurname">Name And Surname</string>
+
+
 </resources>
