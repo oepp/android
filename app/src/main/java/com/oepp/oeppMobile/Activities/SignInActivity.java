@@ -1,8 +1,10 @@
-package com.oepp.oeppMobile;
+package com.oepp.oeppMobile.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.oepp.oeppMobile.R;
 
 public class SignInActivity extends AppCompatActivity {
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserMainActivity"
+    tools:context=".Activities.UserMainActivity"
     android:background="@drawable/background_gradient">
 
     <LinearLayout
@@ -15,7 +15,39 @@
         <ImageView
             android:src="@drawable/logo"
             android:layout_width="wrap_content"
+            android:layout_margin="20dp"
             android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/findCourseActivityPageButton"
+                style="@style/textStyle"
+                android:text="@string/findCourses"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/signOutButton"
+                android:text="@string/signOut"
+                android:layout_margin="10dp"
+                style="@style/textStyle"
+                android:background="@drawable/button_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:text="@string/myCourses"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ListView>
 
     </LinearLayout>
 

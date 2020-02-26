@@ -1,14 +1,16 @@
-package com.oepp.oeppMobile;
+package com.oepp.oeppMobile.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class SignUpActivity extends AppCompatActivity {
+import com.oepp.oeppMobile.R;
+
+public class MyCourseReview extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.activity_my_course_review);
     }
 }

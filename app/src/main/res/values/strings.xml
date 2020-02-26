@@ -9,6 +9,8 @@
     <string name="searchYourCourse">Search Your Course</string>
     <string name="search">Search</string>
     <string name="popularCourses">Popular Courses</string>
-
+    <string name="myCourses">My Courses</string>
+    <string name="signOut">Sign Out</string>
+    <string name="findCourses">Find Courses</string>
 
 </resources>
