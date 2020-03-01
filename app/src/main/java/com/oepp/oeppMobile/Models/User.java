@@ -1,4 +1,4 @@
-package com.oepp.oeppMobile.User;
+package com.oepp.oeppMobile.Models;
 
 public class User
 {

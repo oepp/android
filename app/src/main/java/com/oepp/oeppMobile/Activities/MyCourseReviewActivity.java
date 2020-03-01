@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.oepp.oeppMobile.R;
 
-public class MyCourseReview extends AppCompatActivity {
+public class MyCourseReviewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

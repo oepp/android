@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.MyCourseReviewActivity"
+    tools:context=".Activities.CourseReviewActivity"
     android:background="@drawable/background_gradient">
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center">
-        
         <Button
-            android:id="@+id/back_MyCourseReview"
-            android:layout_margin="10dp"
+            android:id="@+id/back_CourseReviewActivity"
             android:text="@string/back"
             style="@style/textStyle"
             android:background="@drawable/button_shape"
+            android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -32,14 +32,13 @@
         </androidx.cardview.widget.CardView>
 
         <Button
-            android:id="@+id/startCourse_MyCourseReviewActivity"
-            android:text="@string/startCourse"
-            android:background="@drawable/button_shape"
+            android:id="@+id/getCourse_CourseReviewActivity"
+            android:text="@string/getCourse"
             style="@style/textStyle"
+            android:background="@drawable/button_shape"
             android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
     </LinearLayout>
 
 </RelativeLayout>

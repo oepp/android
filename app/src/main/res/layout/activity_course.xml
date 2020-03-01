@@ -4,42 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.MyCourseReviewActivity"
+    tools:context=".Activities.CourseActivity"
     android:background="@drawable/background_gradient">
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center">
-        
+
         <Button
-            android:id="@+id/back_MyCourseReview"
-            android:layout_margin="10dp"
+            android:id="@+id/backButton_ActivityCourse"
+            style="@style/textStyle"
             android:text="@string/back"
-            style="@style/textStyle"
-            android:background="@drawable/button_shape"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <androidx.cardview.widget.CardView
-            android:layout_centerInParent="true"
-            android:minWidth="300dp"
-            android:minHeight="500dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/cardviewcolor">
-
-        </androidx.cardview.widget.CardView>
-
-        <Button
-            android:id="@+id/startCourse_MyCourseReviewActivity"
-            android:text="@string/startCourse"
-            android:background="@drawable/button_shape"
-            style="@style/textStyle"
             android:layout_margin="10dp"
+            android:background="@drawable/button_shape"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
+        <TextView
+            android:text="This is COURSE ACTIVITY"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
-
 </RelativeLayout>

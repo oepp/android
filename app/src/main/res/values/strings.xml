@@ -12,5 +12,7 @@
     <string name="myCourses">My Courses</string>
     <string name="signOut">Sign Out</string>
     <string name="findCourses">Find Courses</string>
-
+    <string name="back">Back</string>
+    <string name="startCourse">Start</string>
+    <string name="getCourse">Get Course</string>
 </resources>

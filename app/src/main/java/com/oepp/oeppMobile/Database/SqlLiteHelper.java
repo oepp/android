@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-import com.oepp.oeppMobile.User.User;
+import com.oepp.oeppMobile.Models.User;
 
 public class SqlLiteHelper extends SQLiteOpenHelper
 {
@@ -104,7 +104,7 @@ public class SqlLiteHelper extends SQLiteOpenHelper
         {
             return user;
         }
-        
+
         return null;
     }
 }

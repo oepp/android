@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.FindCourseActivity"
+    android:background="@drawable/background_gradient">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/backButton_FindCourseActivity"
+            android:text="@string/back"
+            android:layout_margin="10dp"
+            android:layout_gravity="left"
+            android:background="@drawable/button_shape"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+            <EditText
+                android:id="@+id/findCourseTextView_FindCourseActivity"
+                android:hint="@string/findCourses"
+                android:minWidth="250dp"
+                android:gravity="center"
+                android:minHeight="60dp"
+                style="@style/textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/findButton_FindCourseActivity"
+                android:text="@string/search"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_shape"
+                style="@style/textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+      <ListView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</RelativeLayout>
