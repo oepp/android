@@ -31,12 +31,15 @@ public class SignUpActivity extends AppCompatActivity
 
     public AccountSingleton accountSingleton;
 
+    private SqlLiteHelper sqlLiteHelper ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
         initiliazeUi();
+        sqlLiteHelper = new SqlLiteHelper(getApplicationContext());
     }
 
     @Override
@@ -99,10 +102,20 @@ public class SignUpActivity extends AppCompatActivity
         {
             if (isUserNotRegister(email,password))
             {
-                saveUserToDatabase();
+                saveUserToDatabase(nameandsurname,email,password);
+
                 User user =getUserFromDatabase();
+
                 AccountSingleton.getInstance().setUser(user);
-                sendUserToUserMainActivity();
+
+                if (AccountSingleton.getInstance().isLoginProvided())
+                {
+                    sendUserToUserMainActivity();
+                }
+                else
+                {
+                    Toast.makeText(SignUpActivity.this,"Login to Account failed",Toast.LENGTH_SHORT).show();
+                }
             }
             else
             {
@@ -120,14 +133,31 @@ public class SignUpActivity extends AppCompatActivity
         return  null;
     }
 
-    public void saveUserToDatabase()
+    public void saveUserToDatabase(String name,String email,String password)
     {
+        User newUser = new User(name,email,password);
 
+        if(sqlLiteHelper.UserRegistration(newUser))
+        {
+
+            Toast.makeText(SignUpActivity.this,"User save",Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
+            Toast.makeText(SignUpActivity.this,"User save failed",Toast.LENGTH_SHORT).show();
+        }
     }
 
     boolean isUserNotRegister(String email,String password)
     {
-        return true;
+        if (sqlLiteHelper.isUserRegistered(new User(email,password)))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     public  void onSignInActivityButtonPressed()
